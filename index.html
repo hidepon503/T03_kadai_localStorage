@@ -29,7 +29,7 @@
       <nav class="w-full">
         <ul class="navi w-full flex justify-around" >
           <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
+          <li><a href="#search">Search</a></li>
           <li><a href="#matching">Matching</a></li>
           <li><a href="#price">Price</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -58,25 +58,60 @@
     <div class="mainWrapper w-full">
 
       <!-- home section -->
-      <section id="home" class="home w-full ">
-        <div class="home-container w-full flex flex-row-reverse">
-          <div class="home-img w-1/2">
-            <img src="./img/nekotoroujin.jpg" class="heroimg" alt="">
+      <section id="home" class="home">
+        <div class="home-container">
+          <div class="home-img">
+            <img src="./img/nekotoroujin.jpg" class="hero-img" alt="">
           </div>
-          <div class="home-text w-1/2 flex flex-col items-center justify-center">
-            <h1 class="home-title text-4xl">安心してペットと暮らすために</h1>
-            <p class="text-2xl">ペットの引き取り補償付き仲介サービスを提供しています。<br>
-              お客様のご希望に合わせて、ペットのお引き取りから<br>
-              お届けまでをサポートいたし</p>
+          <div class="home-text-box">
+            <h1 class="home-title">安心してペットと暮らすために</h1>
+            <p class="home-text">XXXXXXXXXX</p>
           </div>
         </div>
       </section>
       <section id="about" class="about">
         <h2 id="" class="">About</h2>
       </section>
-      <section id="service" class="service">
-        <h2>Service</h2>
+<!-- Search Section -->
+      <section id="search" class="search">
+        <h2>Search</h2>
+        <div id="search-menu" class="search-menu">
+          <div class="search-select">
+            <label for="card-area">エリア</label>
+            <select name="" id="card-area">
+              <option value="東京都">東京都</option>
+              <option value="福岡県">福岡県</option>
+              <option value="北海道">北海道</option>
+            </select>
+            <!-- <input type="text" id="card-area" > -->
+            <label for="card-type">性格</label>
+            <select name="" id="card-type">
+              <option value="甘えん坊">甘えん坊</option>
+              <option value="人が大好き">人が大好き</option>
+              <option value="野性派タイプ">野性派タイプ</option>
+              <option value="引っ込み思案">引っ込み思案</option>
+            </select>
+            <!-- <input type="text" id="card-type" > -->
+            <label for="card-jander">性別</label>
+            <select name="" id="card-jander">
+              <option value="男の子">男の子</option>
+              <option value="女の子">女の子</option>
+            </select>
+            <!-- <input type="text" id="card-jander" > -->
+          </div>
+            <div class="search-menu-button">
+              <button id="search-button" class="search-button">検索</button>
+              <button id="favorite-index-button" class="favorite-index-button">お気に入り一覧</button>
+              <button id="back" class="hidden">戻る</button>
+            </div>
+        </div>
+        <div id="search_card-container" class="search_card-container"></div>
+        <div id="favorite-container" class="favorite-container hidden">
+        </div>
+        
       </section>
+
+
 <!-- Muching section -->
 <section id="matching" class="muching">
         <h2 class="sectionM ">Matching</h2>
@@ -133,7 +168,7 @@
           </div>
 
 
-         <!-- 　マッチング -->
+        <!-- 　マッチング -->
           <div id="matching-container" class="matching-container hidden">
             <div id="like" class="muching-button">
               <p>Like</p>
@@ -182,6 +217,8 @@
   </main>
   <footer></footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="./JS/main.js"></script>
+  <script src="./JS/matching.js"></script>
+  <script src="./JS/header.js"></script>
+  <script src="./JS/search.js"></script>
 </body>
 </html>

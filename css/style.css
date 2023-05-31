@@ -9,6 +9,10 @@ header{
   z-index: 999;
   background-color: #ffd34d;
 }
+section {
+  height: 100vh;
+  /* padding-top: 5rem; */
+}
 h1{
   font-size: xxx-large;
   font-weight: 800;
@@ -139,16 +143,16 @@ nav.globalMenuSp.active {
 }
 
 /* レスポンシブ対応 */
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 700px) {
 .title{
   font-size: xx-large;
 }
-.home-container{
+/* .home-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 br{
   display: block;
 }
@@ -163,23 +167,59 @@ br{
 /* main */
 
 /* home section */
+.home{
+  width: 100%;
+  height: 100%;
+}
+.home-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.home-img{
+  width: 60%;
+  height: 100%;
+}
+.home-text-box{
+  width: 40%;
+  height: 100%;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title{
+  font-size: large;
+  margin: 1rem 0 0 0;
+}
+.home-text{
+  margin: 1rem 0 1rem 0;
+}
 
 
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 700px) {
+.home-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .home-img{
   width: 100%;
-  height: 80vh;
-  /* background-color: #F3AAB9; */
-  background-image: url(../img/hero.jpg);
 }
-.section-title{
-  height: 100%;
-  background-image: url(../img/maru.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.heroimg{
+.home-text-box{
   width: 100%;
 }
+}
+
+
 
 /* about section */
 .about{
@@ -188,24 +228,122 @@ br{
 }
 
 
-/* service section */
-.service{
-  height: 100vh;
+/* search section */
+.search{
+  height: 160vh;
   background-color: #ffffff;
 }
+.search-menu{
+  width: 100%;
+  padding:1rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+select{
+  width: 20%;
+}
+.search-select{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.search-menu-button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.search-button{
+  margin-right: 0rem;
+}
+
+/* ページネーション */
+.pagination-container {
+  width: 100%;
+  padding-left: 1rem;
+}
+.pagination-container a{
+  font-size: large;
+
+  margin-right: 1rem;
+
+  border: solid 1px #F48B4A;
+
+}
+
+
+.search_card-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  /* justify-content: space-around; */
+}
+.favorite-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.cat-card{
+  width: 20%;
+  height: 50%;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.favorite-card{
+  width: 20%;
+  height: 50%;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.cat-card img {
+  width: 100%;
+  /* 任意のサイズに変更してください */
+  height: 30vh;
+  /* 任意のサイズに変更してください */
+  object-fit: cover;
+}
+.favorite-card img {
+  width: 100%;
+  /* 任意のサイズに変更してください */
+  height: 30vh;
+  /* 任意のサイズに変更してください */
+  object-fit: cover;
+}
+
+.card-content{
+  padding: 10px;
+}
+
+.cardName{
+  display: flex;
+  justify-content: space-around;
+}
+.cardAge{
+  display: flex;
+  justify-content: space-around;
+}
+.cardFavorite{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  /* padding-right:0.5rem ; */
+  font-size: x-large;
+}
+
+
+
+/* muching section */
 .matching-wrapper{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-section {
-  height: 100vh;
-  /* padding-top: 5rem; */
-}
-
-/* muching section */
 /* 相性診断テストボタン */
 
 /* 心理テスト */
